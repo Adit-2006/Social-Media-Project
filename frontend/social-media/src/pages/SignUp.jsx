@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
-import axiosInstance from "../src/axiosCalls/axios";
+import axiosInstance from "/src/axiosCalls/axios";
 
 function SignUp() {
 

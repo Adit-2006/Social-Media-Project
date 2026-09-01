@@ -1,9 +1,9 @@
-import { useAuth } from '../context/AuthContext'
+import  useAuth  from '../context/AuthContext.jsx'
 import { Navigate } from 'react-router-dom'
 
 function PublicRoute({ children }) {
 
-  const [user, loading] = useAuth()
+  const {user, loading} = useAuth()
 
 
   if (loading) {
@@ -11,7 +11,7 @@ function PublicRoute({ children }) {
   }
 
   if (user) {
-    return Navigate('/home')
+    return <Navigate to="/home" replace />
   }
 
 

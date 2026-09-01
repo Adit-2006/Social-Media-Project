@@ -15,7 +15,7 @@ function Login() {
     setErr('')
     setLoader(true)
     try {
-      axiosInstance.post('/users/login', form)
+      await axiosInstance.post('/users/login', form)
       
     }
     catch (error) {
